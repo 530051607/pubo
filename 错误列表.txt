@@ -1,0 +1,1 @@
+1、在使用jquery获取样式属性时，一直为undefined,因为我用了attr去获取，实际应该用css("width")去获取

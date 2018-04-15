@@ -2,7 +2,68 @@
 body {
 	background: #000;
 }
+/*顶部背景条*/
+.top-bg {
+	height: 50px;
+	line-height: 50px;
+	color: #FFF;
+	font-size: 18px;
+	background: #2D3949;
+}
+/*顶部的按钮列表*/
+.top-icon-list>i {
+	margin-right: 10px;
+}
+/*左上角信息提示面板*/
+.tips-pane {
+	color: #FFF;
+	font-size: 16px;
+	border-right: 30px solid;
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#0E0E0E));
+	-webkit-border-image: -webkit-linear-gradient(#FFF, #0E0E0E);
+	-moz-border-image: -moz-linear-gradient(#FFF, #0E0E0E);
+	-o-border-image: -o-linear-gradient(#FFF, #0E0E0E);
+	border-image: linear-gradient(#FFF, #0E0E0E) 30 30;
+}
+.tips-pane .tips-item label{
+	float: left;
+}
+.tips-pane .tips-item span{
+	float: right;
+}
+/*右侧缩略图*/
+.right-box {
+	position: relative;
+	height: 100%;
+	color: #FFF;
+	height: 450px;
+	border-left: 2px solid #101317;
+	border-bottom: 2px solid #101317;
+}
 
+.right-title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	font-size: 16px;
+}
+.right-content {
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.right-footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+}
+.right-footer  i {
+	cursor: pointer;
+	margin-right: 10px;
+}
 /*底部功能面板*/
 .mune-panel {
 	position: fixed;
@@ -41,6 +102,53 @@ body {
 }
 .mune-panel .tab-pane .fa {
 	margin-right: 10px;
+}
+
+/*切换按钮*/
+.shift-btn {
+	position: relative;
+	width: 65px;
+	height: 60px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.shift-btn .half-circle {
+	position: absolute;
+	background: #30445C;
+	width: 30px;
+	height: 60px;
+	
+}
+.activeBtn {
+	background: #4169E1 !important;
+}
+
+.shift-btn .left {
+	left: 0;
+	top: 0;
+	border-radius: 30px 0 0 30px;
+	
+}
+.shift-btn .right {
+	left: 35px;
+	top: 0;
+	border-radius: 0 30px 30px 0;
+}
+.shift-btn .middle {
+	position: absolute;
+	left: 18px;
+	top: 18px;
+	width: 26px;
+	height: 26px;
+	line-height: 30px;
+	color: #FFF;
+	background-color: #99AAC4;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #376939,
+				0 0 10px #176698,
+				0 0 15px #355C84;
+	text-align: center;
+	z-index: 2;
 }
 
 /*==================夏麒麟 结束===================*/
