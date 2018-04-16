@@ -1,24 +1,31 @@
 /*==================夏麒麟  开始===================*/
+html {
+	/*因为引入了bootstrap库还有一些其他库，统一这个font-size*/ 
+	font-size: 10px !important;
+}
 body {
 	background: #000;
 }
 /*顶部背景条*/
 .top-bg {
-	height: 50px;
-	line-height: 50px;
+	/*height: 50px;
+	line-height: 50px;*/
+	height: 5rem;
+	line-height: 5rem;
 	color: #FFF;
-	font-size: 18px;
+	font-size: 1.8rem;/*18px*/
 	background: #2D3949;
 }
 /*顶部的按钮列表*/
 .top-icon-list>i {
-	margin-right: 10px;
+	/*10px*/
+	margin-right: 1rem;
 }
 /*左上角信息提示面板*/
 .tips-pane {
 	color: #FFF;
-	font-size: 16px;
-	border-right: 30px solid;
+	font-size: 1.6rem;
+	border-right: 3rem solid;
 	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#0E0E0E));
 	-webkit-border-image: -webkit-linear-gradient(#FFF, #0E0E0E);
 	-moz-border-image: -moz-linear-gradient(#FFF, #0E0E0E);
@@ -40,7 +47,7 @@ body {
 	border-left: 2px solid #101317;
 	border-bottom: 2px solid #101317;
 }
-
+/*缩略图标题*/
 .right-title {
 	position: absolute;
 	left: 0;
@@ -48,11 +55,21 @@ body {
 	
 	font-size: 16px;
 }
+/*右侧缩略图主体内容*/
 .right-content {
 	position: absolute;
-	top: 30px;
+	top: 3rem;
 	left: 0;
+	width: 100%;
+	height: 28rem;
+	overflow-y:auto;
 }
+.right-content img {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+}
+/*缩略图功能面板*/
 .right-footer {
 	position: absolute;
 	left: 0;
@@ -62,16 +79,16 @@ body {
 }
 .right-footer  i {
 	cursor: pointer;
-	margin-right: 10px;
+	margin-right: 1rem;
 }
+
 /*底部功能面板*/
 .mune-panel {
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 130px;
-	
+	/*height: 13rem;*/
 }
 /*tab切换按钮*/
 .mune-panel>.nav>li {
@@ -84,7 +101,7 @@ body {
 	
 }
 .mune-panel>.tab-content {
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 
 
@@ -150,6 +167,60 @@ body {
 	text-align: center;
 	z-index: 2;
 }
+.image-pane {
+	padding-right: 0;
+}
+/*中间图像部分*/
+.image-header-info {
+	color: #FFF;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.image-header-info .info-1 {
+	margin-right: 40px;
+}
+/*实时图像*/
+.image-online {
+	border: 1px solid #CCC;
+	color: #FFF;
+	
+	/*overflow: hidden;*/
+}
+/*左右图像*/
+.image-online .image-online-left,.image-online .image-online-right {
+	float: left;
+	height: 100%;
+	
+}
+.image-online .image-online-left {
+	width: 36.58888rem;
+	border-right: 1px dashed #007DDB;
+	padding-right: 0.5rem;
+	margin-right: 0.5rem;
+}
+.image-online .image-online-right {
+	/*width: 100%;*/
+	
+	width: 36.58888rem;
+}
+.image-online .title {
+	height: 1.666667rem;
+	margin-bottom: 2rem;
+}
+/*这里用到了那个rem  html的font-size：12px*/
+.image-online .content{
+	width: 100%;
+	/*height: 35.4rem;*/
+	/*height: 34rem;*/
+	overflow: hidden;
+	
+}
+.image-online .content img {
+	width: 36.58888rem;
+	height: 100%;
+	background-size: cover;
+}
+/*图像部分结束*/
 
 /*==================夏麒麟 结束===================*/
 
