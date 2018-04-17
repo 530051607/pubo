@@ -35,3 +35,4 @@ new scale('btn4', 'bar4', 'title4');
 new scale('btn5', 'bar5', 'title5');
 new scale('btn6', 'bar6', 'title6');
 new scale('btn7', 'bar7', 'title7');
+new scale('btn8', 'bar8', 'title8');

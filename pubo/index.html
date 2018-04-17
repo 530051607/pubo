@@ -83,11 +83,11 @@
 
 						<div class="User_ratings User_grade" id="div_fraction0" style="width: 100%;">
 							<div class="ratings_bars" style="width: 100%;">
-								<span id="title0">0</span>
+								<span id="title8">0</span>
 								<span class="bars_10">0</span>
-								<div class="scale" id="bar0" style="width: 7.14rem;">
+								<div class="scale" id="bar8" style="width: 7.14rem;">
 									<div></div>
-									<span id="btn0"></span>
+									<span id="btn8"></span>
 								</div>
 								<span class="bars_10">10</span>
 							</div>
@@ -178,7 +178,7 @@
 						</div>
 
 					</div>
-
+				</div>
 					<!--按钮控制面板-->
 					<div class="mune-panel">
 						<ul class="nav nav-tabs mune-nav" style="display: block;">
@@ -811,6 +811,8 @@
 						</div>
 					</div>
 					<!--模态框结束-->
+			</div>		
+		</div>	
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -897,10 +899,11 @@
 		}
 	</script>
 	<script type="text/javascript">
-		var s1; //定义四个定时器
+		var s1; //定义五个定时器
 		var s2;
 		var s3;
 		var s4;
+		var s5;
 
 		$(function() {
 			//切换按钮
@@ -979,6 +982,9 @@
 				$(".right-box2").css("display", "block");
 				s4 = setTimeout(function() { //点击后5s切换回菜单栏
 					$(".mune-btn3-slide").css("display", "none"), $(".mune-nav").css("display", "block"),$(".right-box2").css("display","none"),$(".right-box1").css("display","block");
+				}, 5000);
+				s5 = setTimeout(function() {
+					$(".right-box2").css("display","none"),$(".right.box1").css("display","none");
 				}, 5000);
 			})
 			$(".btn3-puncture").click(function() {
